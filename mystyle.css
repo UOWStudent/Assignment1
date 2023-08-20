@@ -1,0 +1,100 @@
+/* mystyle.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+		h1 {                                   /* use a heading class */
+			color: green;
+			margin-top: 70px;
+        } 
+    	.h11 {                                 /* retain the heading class for providing name and student iD */
+			margin-top: 50px;
+			color: red; 
+			text-align:center;
+			font-size: 50px;
+        }
+        div.studIDfname {                       /* define a div class for the student number and full name */
+            color: blue;
+            font-family: 'Tahoma';
+            font-size: xx-large;
+            font-weight: bold;
+            border:1px dashed blue;
+            background-color: aqua;
+            padding: 10px;
+        }
+        div.subjcodetitle {                     /* define a div class for the subject code and title */
+            color: blue;
+            font-family: 'Tahoma';
+            font-size: large;
+            font-weight: bold;
+        }
+        div.assnumduedate {                     /* define a div class for the assignment number and due date */
+            color: blue;
+            font-family: 'Montserrat';
+            font-size: small;
+            font-weight: bold;
+        }
+        tr {                                    /* define a class for the font for the table row */
+            font-family: 'Montserrat';
+            font-size: 16px;
+            border-width: 5px;
+            padding: 10px;
+            background-color: white;
+        }
+        th {                                    /* define a class for the font for the table header */
+            background-color: #001641;   
+            color: white;
+            padding: 10px;
+            align-items: left;
+        }
+        td {                                    /* format table row data elements */
+            align-items: left;
+            padding: 10px;
+        }
+        .census-list {                          /* customise attributes for the census list */
+            list-style-type: none;              /* Remove default numbering */
+            padding-left: 20px;                 /* Add some left padding for the dots */
+        }
+        .census-list li:before {
+            content: "•";                       /* Unicode character for a bullet point */
+            margin-right: 10px;                 /* Space between the bullet and the content */
+        }
+        a {
+            font-family: 'Montserrat';          /* define font for the a: element */
+        }
+        .custom-table {                         /* customise border-collapse for the table */
+            border-collapse: collapse;
+            width: 60%;
+        }
+        .custom-table th, .custom-table td {    /* set up borders for table head and data rows */
+            border: 0.5px solid #ccc;         /* grey border for gridlines */
+            padding: 10px;
+            text-align: left;
+        }
+        .custom-table th {                      /* define colour for the header rows */
+            background-color: #f2f2f2;
+            color: #333;
+        }
+		.custom-table tr:nth-child(odd) {       /* customise coloyrs for all the odd rows */
+            background-color: #f2f2f2;        /* Set background color for odd rows */
+        }
+        .webattack-table {                      /* format the table for Task 3 */
+            border-collapse: separate;
+            width: 70%;
+            border: blue;
+            border-color: #333;
+            font-family: Verdana;
+        }
+        .webattack-table th, .webattack-table td {      /* configure formatting for the header and data rows */
+            background-color: #f2f2f2;
+            border: 1px solid;
+            color: blue;
+            font-family: Tahoma;
+            vertical-align: top;
+        }
+
+        .highlighted {                            /* function to highlight buttons when selected */ 
+            background-color: #007bff;          /* Change to your desired highlight color */
+            color: #fff;  
+        }
+        web_image {                               /* define a size for the dog/cat/frog picture */
+            width: 320px;
+			height: 240px;
+        }
