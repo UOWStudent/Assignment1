@@ -1,0 +1,552 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment 3</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <title> COMP804 - Assessment Task 3 - Assignment 1 </title>
+	<script type="text/javascript" charset="UTF-8"></script><script>
+		
+		//Task 1: Use CSS to display the following information
+        
+		
+		
+		//Task 2: Use CSS to style a table
+		
+		
+		
+		//Task 3: HTML & CSS
+		
+		
+		
+		//Task 4: Javascript with button
+		function Cat() {                                                               //define function Cat()
+            ResetButtons();                                                            //call function to reset all the buttons
+            document.getElementById("Cat").style.backgroundColor = "green";            
+            var inputField = document.getElementById('userclicks');
+            inputField.value = 'User clicks Cat';
+            var newMessage = document.getElementById('message');
+            newMessage.value = "Cat is clicked"
+            DisplayImage("Cat");
+         }
+        function Dog() {
+            ResetButtons();
+            document.getElementById("Dog").style.backgroundColor = "green";
+            var inputField = document.getElementById('userclicks');
+            inputField.value = 'User clicks Dog';
+            var newMessage = document.getElementById('message');
+            newMessage.value = "Dog is clicked"
+            DisplayImage("Dog");
+        }
+        function Frog() {
+            ResetButtons();
+            document.getElementById("Frog").style.backgroundColor = "green";
+            var inputField = document.getElementById('userclicks');
+            inputField.value = 'User clicks Frog';
+            var newMessage = document.getElementById('message');
+            newMessage.value = "Frog is clicked"
+            DisplayImage("Frog");
+        }
+        function ResetButtons() {
+            document.getElementById("Cat").style.backgroundColor = "";
+            document.getElementById("Dog").style.backgroundColor = "";
+            document.getElementById("Frog").style.backgroundColor = "";
+        }
+
+        function DisplayImage(picture){								    //function to display the lion image 
+			var image = document.getElementById("showimage");           //get the span element from id = showimage
+			var imageElement = document.createElement("img");           //create a temporary img element variable
+			imageElement.width = 320;                                   //define the width of the image 
+			imageElement.height = 240;                                  //define image height  
+			imageElement.src = picture + ".jpg";                        //set reference to the relevant animal image
+			imageElement.alt = picture + " image";				        //provide alternate text if image does not load			
+			image.innerHTML = "";							            //clear the content of the <span>
+			image.appendChild(imageElement);				            //dynamically append image to the imageElement variable
+			console.log("The image has been displayed.");               //log the successful output to console for debugging purposes
+            }
+		//Task 5: Gihub repository
+		
+    </script>
+	
+	<style> 
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+		h1 {
+			color: green;
+			margin-top: 70px;
+        } 
+    	.h11 {
+			margin-top: 50px;
+			color: red; 
+			text-align:center;
+			font-size: 50px;
+        }
+        div.studIDfname {                       /* define a div class for the student number and full name */
+            color: blue;
+            font-family: 'Tahoma';
+            font-size: xx-large;
+            font-weight: bold;
+            border:1px dashed blue;
+            background-color: aqua;
+            padding: 10px;
+        }
+        div.subjcodetitle {                     /* define a div class for the subject code and title */
+            color: blue;
+            font-family: 'Tahoma';
+            font-size: large;
+            font-weight: bold;
+        }
+        div.assnumduedate {                     /* define a div class for the assignment number and due date */
+            color: blue;
+            font-family: 'Montserrat';
+            font-size: small;
+            font-weight: bold;
+        }
+        tr {
+            font-family: 'Montserrat';
+            font-size: 16px;
+            border-width: 5px;
+            padding: 10px;
+            background-color: white;
+        }
+        th {
+            background-color: #001641;   
+            color: white;
+            padding: 10px;
+            align-items: left;
+        }
+        td {
+            align-items: left;
+            padding: 10px;
+        }
+        .census-list {
+            list-style-type: none; /* Remove default numbering */
+            padding-left: 20px; /* Add some left padding for the dots */
+        }
+        .census-list li:before {
+            content: "•"; /* Unicode character for a bullet point */
+            margin-right: 10px; /* Space between the bullet and the content */
+        }
+        a {
+            font-family: 'Montserrat';
+        }
+        .custom-table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+        .custom-table th, .custom-table td {
+            border: 0.5px solid #ccc; /* Grey border for gridlines */
+            padding: 10px;
+            text-align: left;
+        }
+        .custom-table th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+		.custom-table tr:nth-child(odd) {
+            background-color: #f2f2f2;         /* Set background color for odd rows */
+        }
+        .webattack-table {
+            border-collapse: separate;
+            width: 70%;
+            border: blue;
+            border-color: #333;
+            font-family: Verdana;
+        }
+        .webattack-table th, .webattack-table td {
+            background-color: #f2f2f2;
+            border: 1px solid;
+            color: blue;
+            font-family: Tahoma;
+            vertical-align: top;
+        }
+        .highlightselection  {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            outline: none;
+        }
+        .highlighted {
+            background-color: #007bff; /* Change to your desired highlight color */
+            color: #fff;  
+        }
+        web_image {
+            width: 320px;
+			height: 240px;
+        }
+	</style>
+	
+</head>
+
+<body>
+    <h1 class="h11"> Assessment Task 3 - Assignment 1 </h1>
+		
+	<h1> Task 1: Use CSS to display the following information </h1>
+    <!-- html code for task 1 must be right below -->
+	<div class="studIDfname" >
+        <p>9411682 Sujeet Shukla</p>
+        <div class="subjcodetitle">
+            <p>COMP804: Web Security</p>
+        </div>
+        <div class="assnumduedate">
+            <p> Assignment 1, due at the end of Week 5</p>
+        </div>
+    </div>
+    
+	
+	<h1> Task 2: Use CSS to style a table </h1>
+	<!-- html code for task 2 must be right below -->
+	<table class="custom-table">
+        <a href="https://www.uow.edu.au/student/dates/" target="_blank"> Key dates - University of Wollongong - UOW </a>  <!-- create a URL link to UOW key dates -->
+            <br> <br>
+            <tr>
+                <th width="300px" align="left", style="color: white; background-color: #001641;"> <b>Activity</b> </th>
+                <th width="150px" align="left", style="color: white; background-color: #001641;"> <b>Date</b> </th>
+            </tr>
+            <tr>
+                <td> First day to enrol for re-enrolling (continuing students) </td>
+                <td> 21 Nov 2022 </td>
+            </tr>
+            <tr>
+                <td> Orientation </td>
+                <td> 18 Jul 2023 </td>
+            </tr>
+            <tr>
+                <td> Lectures Commence (weeks 1-9) </td>
+                <td> 24 Jul - 22 Sep 2023 </td>
+            </tr>
+            <tr>
+                <td> Last day to enrol / add subjects yourself </td>
+                <td> 04 Aug 2023 </td>
+            </tr>
+            <tr>
+                <td> Last day to enrol / add subjects with Head of Students approval </td>
+                <td> 11 Aug 2023 </td>
+            </tr>
+            <tr>
+                <td align="left"> <b>CENSUS DATE</b>
+                    <ol class="census-list">
+                        <li>Fees due Last day to withdraw from subject/s without paying for them</li>
+                        <li>HECS / FEE HELP debt reporting date</li>
+                        <li>Last day to change HECS / FEE HELP billing option</li>
+                    </ol>
+                    <a href="https://uowedu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012659" target ="_blank">Learn more about Census date </a> </td>
+                <td align="left"> 31 Aug 2023 </td>
+            </tr>
+            <tr>
+                <td> Student Services and Amenities Fees Due </td>
+                <td></td> 18 Jul 2023 </td>
+            </tr>
+            <tr>
+                <td> Last day to withdraw without academic penalty - subject deleted from record
+                    Fail grade recorded if subject withdrawn after this date </td>
+                <td> 22 Sep 2023 </td>
+            </tr>
+            <tr>
+                <td> Mid-Session Recess (1 week) </td>
+                <td> 25 Sep - 29 Sep 20233 </td>
+            </tr>
+            <tr>
+                <td> Lectures Recommence (weeks 10-13) </td>
+                <td> 02 Oct - 27 Oct 2023 </td>
+            </tr>
+            <tr>
+                <td> Study Recess (1 week) </td>
+                <td> 30 Oct - 03 Nov 2023 </td>
+            </tr>
+            <tr>
+                <td> Exams (2 weeks) </td>
+                <td> 04 Nov - 16 Nov 2023 </td>
+            </tr>
+            <tr>
+                <td> Release of Results </td>
+                <td> 30 Nov 2023 </td>
+            </tr>
+    </table>
+	
+		
+	<h1> Task 3: HTML & CSS </h1>
+	<!-- html code for task 3 must be right below -->
+	<table class="webattack-table">
+        <tr>
+            <th width="300px" align="left", style="color: white; background-color: #001641;"> <b>Web Attack Name</b> </th>
+            <th width="600px" align="left", style="color: white; background-color: #001641;"> <b>Web Attacks - Explanation</b> </th>
+        </tr>
+        <tr>
+            <td> A. Malware Attacks 
+                <br>
+                <img style="width: 500; height: 300;" src="https://cdn.ttgtmedia.com/rms/onlineimages/whatis-malware_types.png">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://cdn.ttgtmedia.com/rms/onlineimages/whatis-malware_types.png"  target="_blank">https://www.techtarget.com/</a>
+            </td>
+            <td> <p> 
+                <ol>
+                    <li> These comprise <i>Ransomware</i> that tends to encrypt victim's data and demand ransom for decrypting. </li>
+                    <li> Part of this is a <i>Rootkit</i> where the threat action gains access to  devices and networks using software configuration settings. </li>
+                    <li> A <i>Trojan</i> disguises itself as a legitimate email attachment or download and activates its hidden code when clicked. </li>
+                    <li> <i>Spyware</i> tracks and spies user internet activity and gathers sensitive information for the threat actor(s). </li>
+                </ol>
+                <a style="padding: 35; font-family:Tahoma;" href="https://www.techtarget.com/searchsecurity/tip/6-common-types-of-cyber-attacks-and-how-to-prevent-them" target="_blank"> https://www.techtarget.com/ </a>
+                </p> 
+            </td>
+        </tr>
+        </tr>
+            <td> B. Phishing attacks - spear phishing, and whaling. 
+                <br><br>
+                <img style="width: 500; height: 300;" src="https://assets-global.website-files.com/6082ee0e95eb6459d78fac06/62461d34764410ea06956405_c9eo-V-i5vxzwo3Z4DgmHCm-JMfMWZwHy_9135Mz1GwfJ9Inu3N94Nuu7Jl6vaq1ZXdfN35JtbrUAr-PFMrmOvpd5xhF8WWYO_VPmV5gBpcdCvF3_3pm3QWPHM3o0u9njyovIbIA.png">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://assets-global.website-files.com/6082ee0e95eb6459d78fac06/62461d34764410ea06956405_c9eo-V-i5vxzwo3Z4DgmHCm-JMfMWZwHy_9135Mz1GwfJ9Inu3N94Nuu7Jl6vaq1ZXdfN35JtbrUAr-PFMrmOvpd5xhF8WWYO_VPmV5gBpcdCvF3_3pm3QWPHM3o0u9njyovIbIA.png"  target="_blank">https://www.aura.com/learn/types-of-cyber-attacks </a>
+            </td>
+            <td><p>                 
+                <ol>
+                <li> A cybercriminal masquerading (imposter) as a trusted source sends a fradulent email, text or phone call and collects data. </li>
+                <li><i>Spear phishing attacks </i> are designed to target specific individuals to coerce the victim to comply. </li>
+                <li> A <i>whaling</i> phishing attack targets high profile individuals for access to data and corporate resources. </li>
+                <li> <i>Angler phishing atacks</i> is used to 'bait' victims on social media and scam users in believing it is a legitimate source. </li>
+            </ol>         
+                <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.aura.com/learn/types-of-cyber-attacks" target="_blank">https://www.aura.com/ </a>
+                </p>
+            </td>
+        </tr>   
+        <tr>
+            <td> C. Man-in-the-Middle (MitM) Attacks
+                <br><br>
+                <img style="width: 500; height: 300;" src="https://www.datto.com/img/library/man-in-the-middle-cyber_attack.jpg">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://www.datto.com/img/library/man-in-the-middle-cyber_attack.jpg" target="_blank">https://www.datto.com/ </a>
+            </td>
+            <td> <p>                 
+                <ol>
+                <li> The threat actor intercepts a two way transaction and inserts themselves in the middle intercerpting and spoofing traffic data. </li>
+                <li> Taking advantage of security vulnerabilities in a network such as unsecured public network, the cybercriminal acts a middleman stealing data. </li>
+                <li> Also known as eavsdropping attack, the attacker can traffic information to deploy malware on device and gain access to all of victim's information. </li>
+                </ol>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.datto.com/au/blog/cybersecurity-101-intro-to-the-top-10-common-types-of-cybersecurity-attacks" target="_blank">https://www.datto.com/ </a>
+            <br>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.cisco.com/c/en_au/products/security/common-cyberattacks.html#~types-of-cyber-attacks" target="_blank">https://www.cisco.com/ </a>
+                </p>                      
+            </td>
+        </tr>
+        <tr>
+            <td> D. SQL injection attack
+                <br><br>
+                <div class="video-container">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/-jy4aa2lBDU" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <br>
+            <a style=font-family:Tahoma;" href="https://www.rapid7.com/fundamentals/sql-injection-attacks/" target="_blank">https://www.rapid7.com/ </a>
+            </td>
+            <td> <p>                 
+                <ol>
+                <li> SQL injection attacks manipulate input fields with malicious scripts to compromise servers and access sensitive database data. </li>
+                <li> The attack targets vulnerable SQL databases, altering and manipulating data using crafted SQL statements to compromise data integrity and behaviour. </li>
+                <li> Potential entry points for the attack include applications, websites and directly targeting databases. Such attacks pose a high risk as it can be hard to recover fully. </li>
+                <li> Some of types of the SQL Injection attack are as follows: </li>
+                    <ul>
+                        <li>Unsanitised input - user input is not sanitised or validated properly leading to data display </li>
+                        <li>Blind SQL injection - the attacker examines the database behaviour using http response and page load times</li>
+                        <li>Out-of-Band Injection - forcing the database to create an external connection to the hacker's server and harvest data</li>
+                    </ul>
+            </ol>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.tripwire.com/state-of-security/most-common-website-security-attacks-and-how-to-protect-yourself" target="_blank">https://www.tripwire.com/ </a>
+            <br>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.rapid7.com/fundamentals/sql-injection-attacks/" target="_blank">https://www.rapid7.com/ </a>
+                </p>    
+
+            </td>
+        </tr>
+        <tr>
+            <td> E. Denial of Service (DOS) and Distributed Denial of Service (DDoS) 
+                <br><br>
+                <img style="width: 500; height: 300;" src="https://www.cobalt.io/hs-fs/hubfs/Imported_Blog_Media/Content_Image_-_CTA_-blog_assets--Mar-20-2022-07-20-39-27-PM.png?width=1360&name=Content_Image_-_CTA_-blog_assets--Mar-20-2022-07-20-39-27-PM.png">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://www.cobalt.io/hs-fs/hubfs/Imported_Blog_Media/Content_Image_-_CTA_-blog_assets--Mar-20-2022-07-20-39-27-PM.png?width=1360&name=Content_Image_-_CTA_-blog_assets--Mar-20-2022-07-20-39-27-PM.png" target="_blank">https://www.cobalt.io/ </a>
+                
+            </td>
+            <td> <p>                 
+                <ol>
+                <li> DoS - hackers force false request and traffic to overwhelm and flood a system and shut it down. In DDoS, DoS is used to breach and disrupt multiple systems or devices.</li>
+                <li> Taking advantage of security vulnerabilities in a network such as unsecured public network, the cybercriminal acts a middleman stealing data. </li>
+                <li> The following lists the common DoS execution methods:</li>
+                <ul>
+                    <li>UDP flooding - overwhelm UDP packets causing it to crash </li>
+                    <li>TCP SYNC floods - disrupt the three way handshake process by not responding and keeping connection open for a long time</li>
+                    <li>HTTP flood - overwhelm Web Servers with http requests</li>
+                    <li>Ping flood - send ICMP requests to consume bandwith and slow down legitimate traffic </li>
+                </ul>
+                </ol>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.aura.com/learn/types-of-cyber-attacks" target="_blank">https://www.aura.com/ </a>
+            <br>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.byos.io/blog/denial-of-service-attack-prevention" target="_blank">hhttps://www.byos.io/ </a>
+                </p> 
+            </td>
+        </tr>
+        <tr>
+            <td> F. Zero-day exploits and attacks 
+                <br><br>
+                <img style="width: 500; height: 300;" src="https://www.balbix.com/app/uploads/Lifecycle-of-a-zero-day-Page-1.png">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://www.balbix.com/app/uploads/Lifecycle-of-a-zero-day-Page-1.png" target="_blank">https://www.balbix.com/ </a>
+            </td>
+            <td> <p>                 
+                <ol>
+                <li> These refer software vulnerabilities that exist in software and infrastructure that the manufacturer is not aware of. As these vulnerabilities have no fix, the victim company has 'zero days' to fix it.</li>
+                <li> In a zero-day attack or exploit, cybercriminals are able to identify and use these system flaws to access systems and steal data or cause malicious damage. </li>
+                <li> Some examples of significant zero-day attacks are:</li>
+                <ul>
+                    <li>"Log4J" (2021) - discovered in widely used Java-based utility including Apple's iCloud, Amazon Web Service, Microsoft, Cisco, Google Cloud and Mars Rover.</li>
+                    <li>Stuxnet (2010) - a worm that explioted PLC vulnerability running on Mircosoft Windows OS infecting Siemens 7 software sabotaging centrifuges used to separate nuclear material</li>
+                    <li>LinkedIn (2021) - a hacker scraped and harvested user data by exploiting the site's API</li>
+                </ul>
+                </ol>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.aura.com/learn/types-of-cyber-attacks" target="_blank">https://www.aura.com/ </a>
+            <br>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.imperva.com/learn/application-security/zero-day-exploit/" target="_blank">https://www.imperva.com/</a>
+            <br>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://cybriant.com/recent-examples-of-zero-day-attacks-how-to-avoid-them/" target="_blank">https://cybriant.com/</a>
+            </p>                               
+            </td>
+        </tr>
+        <tr>
+            <td> G. Cross-site Scripting (XSS)
+                <br><br>
+                <img style="width: 500; height: 300;" src="https://www.cloudflare.com/img/learning/security/threats/cross-site-scripting/xss-attack.png">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://www.cloudflare.com/img/learning/security/threats/cross-site-scripting/xss-attack.png" target="_blank">https://www.cloudflare.com/ </a>
+            </td>
+             <td> <p>                 
+                <ol>
+                <li> This is an attack where an attacker injects malicious code into a legitimate website, which then executes when users load the site..</li>
+                <li> It is a client-side code injection attack and the code is typically added to URLs or user-generated content. </li>
+                <li> The attack attacks involve delivering malicious scripts to a victim's browser, which can exfiltrate data, install malware, or redirect the user to malicious sites.</li>
+                <li> Sanitising and validating user input data can help prevent such attacks.</li>
+                </ol>
+                <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.cloudflare.com/en-au/learning/security/threats/cross-site-scripting/" target="_blank">https://www.cloudflare.com/ </a>
+                <br>
+                <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.tripwire.com/state-of-security/most-common-website-security-attacks-and-how-to-protect-yourself" target="_blank">https://www.tripwire.com/</a>
+                <br>
+                </p>
+                </td>
+        </tr>
+ 
+        <tr>
+            <td> H. Directory Traversal
+                <br><br>
+                <img style="width: 500; height: 300;" src="https://images.ctfassets.net/4un77bcsnjzw/7570kY08nQytjgBqSCj9fC/1174c83636ccd4686e92a82a9ef1558f/Directory_traversal_Attack.svg">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://images.ctfassets.net/4un77bcsnjzw/7570kY08nQytjgBqSCj9fC/1174c83636ccd4686e92a82a9ef1558f/Directory_traversal_Attack.svg" target="_blank">https://learn.snyk.io/ </a>
+            </td>
+             <td> <p>                 
+                <ol>
+                <li> Directory or path traversal, an HTTP exploit, targets web servers with security misconfigurations to access data outside the server's root directory, allowing attackers to view restricted files and potentially execute commands.</li>
+                <li> This attack mainly affects servers accepting unvalidated input from web browsers, with threat actors scanning directory trees to find paths to restricted files.. </li>
+                <li> To prevent path traversal and enhance web server security, normalise file paths, avoid using lower-privilege users, regularly update programming language and web server versions, and avoid using user-supplied file paths.</li>
+                </ol>
+                <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://brightsec.com/blog/directory-traversal/" target="_blank">https://brightsec.com/</a>
+                 <br>
+                <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.stackhawk.com/blog/what-is-path-traversal/" target="_blank">https://www.stackhawk.com/</a>
+                <br>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>I.  Broken Authentication (Vulnerabilities)
+                <br><br>
+                <img style="width: 400; height: 300;" src="https://assets.website-files.com/5ff66329429d880392f6cba2/60fe646c9fb2985e892f46f4_Broken%20User%20Authentication%20work.jpg">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://assets.website-files.com/5ff66329429d880392f6cba2/60fe646c9fb2985e892f46f4_Broken%20User%20Authentication%20work.jpg" target="_blank">https://www.wallarm.com/</a>
+
+            </td>
+            <td> <p>                 
+                <ol>
+                <li> Broken Authentication is a security risk that can enable attackers to compromise user credentials and gain control over a system, posing a significant threat to data and system integrity.</li>
+                <li> It allows a hacker to bypass the application's authentication mechanism due to software misconfigurations, logic errors, or bugs, enabling unauthorised access . </li>
+                <li> Attackers don't need advanced technical skills to exploit this vulnerability, particularly when access controls are poorly implemented or nonexistent: is has been a critical risk in web applications on the OWASP Top 10 since 2013.</li>
+                <li> Such attacks can be prevented by creating strong passwords and using token-based Multi-Factor Authentication (MFA) for authentication.</li>
+                </ol>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="hhttps://knowledge-base.secureflag.com/vulnerabilities/broken_authentication/broken_authentication_vulnerability.html" target="_blank">https://knowledge-base.secureflag.com/</a>
+            <br>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.tripwire.com/state-of-security/most-common-website-security-attacks-and-how-to-protect-yourself" target="_blank">https://www.tripwire.com/</a>
+            <br>
+            </p>
+
+            </td>
+        </tr>
+        <tr>
+            <td> J. Drive-by download Attack
+                <br><br>
+                <img style="width: 500; height: 300;" src="https://www.exabeam.com/wp-content/uploads/2019/11/drive_by_download.png">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://www.exabeam.com/wp-content/uploads/2019/11/drive_by_download.png" target="_blank">https://www.exabeam.com/</a>
+            </td>
+            <td><p>                 
+                <ol>
+                <li> It refers to unauthorized, automatic and unnoticed downloading of software onto a user's device while browsing legitimate websites or via malicious advertisement, often exploiting vulnerabilities in web browsers operating systems, Java, file editors and viewers.</li>
+                <li> The aim of the hacker is to ultimately compromise the device and enlist it into botnet as follows:  </li>
+                <ul>
+                    <li>Injection of malicious code in compromised web page via Javascript code, an iFrame, a link, a redirect, a malivertisment and XSS.</li>
+                    <li>Vulnerability exploits - user triggers the code by viewing or clicking web-element that exploits a software vulnerability on the device. </li>
+                    <li>The code is downloaded and executed silently on user device giving control to the threat actor.</li>
+                    <li>The hacker remote accesses the device and harvests sensitive data to access other larger systems.</li>
+                </ul>
+                <li>The risk of this attack can be minimised by having a robust software update and patching procedure, enabling a principle of least priviledge and using SIEM-integrated endpoint protection.</li>
+                </ol>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.exabeam.com/information-security/drive-by-download/" target="_blank">https://www.exabeam.com/</a>
+            <br>
+                </p>
+
+            </td>
+        </tr>
+        <tr>
+            <td> K. Fuzzing
+                <br><br>
+                <img style="width: 400; height: 300;" src="https://bromiumlabs.files.wordpress.com/2014/05/fuzzingoverview.png?w=598">
+                <br><br>
+                <a style=font-family:Tahoma;" href="https://bromiumlabs.files.wordpress.com/2014/05/fuzzingoverview.png?w=598" target="_blank">https://bromiumlabs.wordpress.com/</a> 
+            </td>
+            <td> <p>                 
+                <ol>
+                <li>This 'black box' technique works by inputting a large amount of random data into an application to induce crashes, followed by the use of a fuzzer software to identify vulnerabilities.</li>
+                <li>It is used for discovering software bugs by stressing applications with unexpected inputs to trigger crashes or vulnerabilities. </li>
+                <li>There are two main categories for http(s) fuzzing: </li>
+                <ul>
+                    <li>Recursive - involves fuzzing a part of a request by iterating through all possible combinations of a set alphabet. For example, fuzzing the "8302fa3b" part of a URL against the hexadecimal alphabet (0-9, a-f) generates multiple requests, one for each possible combination. This results in a large number of requests with variations of the fuzzed part.</li>
+                    <li>Replacive - a part of the request is fuzzed by replacing it with a set value known as a fuzz vector. For instance, testing for XSS by sending different fuzz vectors to a URL involves replacing a part of the URL with these vectors. The total number of requests depends on the number of fuzz vectors used. </li>
+                </ul>
+                </ol>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://owasp.org/www-project-web-security-testing-guide/v41/6-Appendix/C-Fuzz_Vectors" target="_blank">https://owasp.org/</a>
+            <br>
+            <a style="padding: 35;  font-family:Tahoma;" href="<a style="padding: 35;" href="https://www.tripwire.com/state-of-security/most-common-website-security-attacks-and-how-to-protect-yourself" target="_blank">https://www.tripwire.com/</a>
+            <br>
+            </p> 
+
+            </td>
+        </tr>
+    </table>
+	<br><br>
+ 
+    <h1> Task 4: Javascript with button </h1>
+	<!-- html code for task 4 must be right below -->
+	
+    <button id=Cat class="button" onclick="Cat()">Cat</button>
+	<button id=Dog class="button" onclick="Dog()">Dog</button>
+    <button id=Frog class="button" onclick="Frog()">Frog</button>
+	<br> <br>
+    <input type="text" id="userclicks" name="ButtonClicked" size="30">
+    <br> <br>
+    <input type="text", id="message" style="border: #ccc; font-family: 'Times New Roman'; font-size: medium;">
+    <br><br>
+    <span class="web_image"; id="showimage"></span>	
+	
+    <!-- <a href="https://commons.wikimedia.org/wiki/File:Dog_Breeds.jpg">Hebrew Matio</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons-->
+    <!-- <a href="https://commons.wikimedia.org/wiki/File:Adorable-animal-cat-20787.jpg">Lau20fe</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons-->
+    <!-- <a title="Charles J. Sharp, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Marsh_frog_(Pelophylax_ridibundus).jpg"><img width="256" alt="Marsh frog (Pelophylax ridibundus)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Marsh_frog_%28Pelophylax_ridibundus%29.jpg/256px-Marsh_frog_%28Pelophylax_ridibundus%29.jpg"></a>-->
+	
+    
+    <h1> Task 5: Gihub repository </h1>
+	<!-- html code for task 5 must be right below -->
+	
+</body>
+
+</html>

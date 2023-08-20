@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> COMP804 - Assessment Task 3 - Assignment 1 </title>
+	<script type="text/javascript" charset="UTF-8"></script><script>
+		
+		//Task 1: Use CSS to display the following information
+        
+		
+		
+		//Task 2: Use CSS to style a table
+		
+		
+		
+		//Task 3: HTML & CSS
+		
+		
+		
+		//Task 4: Javascript with button
+		
+		
+		
+		//Task 5: Gihub repository
+		
+    </script>
+	
+	<style> 
+		h1 {
+			color: green;
+			margin-top: 70px}
+			
+		.h11 {
+			margin-top: 50px;
+			color: red; 
+			text-align:center;
+			font-size: 50px}
+			
+		/* you can add other styles below */
+		
+	</style>
+	
+</head>
+
+<body>
+    <h1 class="h11"> Assessment Task 3 - Assignment 1 </h1>
+		
+	<h1> Task 1: Use CSS to display the following information </h1>
+    <!-- html code for task 1 must be right below -->
+	<body style="background-color:lightgrey; font-weight: bold;">
+        <h1 style="color:blue">9411682 Sujeet Shukla</h1>
+    </body>
+		
+	
+	<h1> Task 2: Use CSS to style a table </h1>
+	<!-- html code for task 2 must be right below -->
+	
+	
+		
+	<h1> Task 3: HTML & CSS </h1>
+	<!-- html code for task 3 must be right below -->
+	
+	
+	
+	<h1> Task 4: Javascript with button </h1>
+	<!-- html code for task 4 must be right below -->
+	
+	
+	
+	<h1> Task 5: Gihub repository </h1>
+	<!-- html code for task 5 must be right below -->
+	
+</body>
+
+</html>
