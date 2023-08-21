@@ -3,183 +3,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assessment 3</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
     <title> COMP804 - Assessment Task 3 - Assignment 1 </title>
-	<script type="text/javascript" charset="UTF-8"></script><script>
-		
-		//Task 1: Use CSS to display the following information
-        
-		
-		
-		//Task 2: Use CSS to style a table
-		
-		
-		
-		//Task 3: HTML & CSS
-		
-		
-		
-		//Task 4: Javascript with button
-		function Cat() {                                                               //define function Cat()
-            ResetButtons();                                                            //call function to reset all the buttons
-            document.getElementById("Cat").style.backgroundColor = "green";            
-            var inputField = document.getElementById('userclicks');
-            inputField.value = 'User clicks Cat';
-            var newMessage = document.getElementById('message');
-            newMessage.value = "Cat is clicked"
-            DisplayImage("Cat");
-         }
-        function Dog() {
-            ResetButtons();
-            document.getElementById("Dog").style.backgroundColor = "green";
-            var inputField = document.getElementById('userclicks');
-            inputField.value = 'User clicks Dog';
-            var newMessage = document.getElementById('message');
-            newMessage.value = "Dog is clicked"
-            DisplayImage("Dog");
-        }
-        function Frog() {
-            ResetButtons();
-            document.getElementById("Frog").style.backgroundColor = "green";
-            var inputField = document.getElementById('userclicks');
-            inputField.value = 'User clicks Frog';
-            var newMessage = document.getElementById('message');
-            newMessage.value = "Frog is clicked"
-            DisplayImage("Frog");
-        }
-        function ResetButtons() {
-            document.getElementById("Cat").style.backgroundColor = "";
-            document.getElementById("Dog").style.backgroundColor = "";
-            document.getElementById("Frog").style.backgroundColor = "";
-        }
-
-        function DisplayImage(picture){								    //function to display the lion image 
-			var image = document.getElementById("showimage");           //get the span element from id = showimage
-			var imageElement = document.createElement("img");           //create a temporary img element variable
-			imageElement.width = 320;                                   //define the width of the image 
-			imageElement.height = 240;                                  //define image height  
-			imageElement.src = picture + ".jpg";                        //set reference to the relevant animal image
-			imageElement.alt = picture + " image";				        //provide alternate text if image does not load			
-			image.innerHTML = "";							            //clear the content of the <span>
-			image.appendChild(imageElement);				            //dynamically append image to the imageElement variable
-			console.log("The image has been displayed.");               //log the successful output to console for debugging purposes
-            }
-		//Task 5: Gihub repository
-		
+    <script>
+        //refer to myscript.js
     </script>
+
 	
 	<style> 
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-		h1 {
-			color: green;
-			margin-top: 70px;
-        } 
-    	.h11 {
-			margin-top: 50px;
-			color: red; 
-			text-align:center;
-			font-size: 50px;
-        }
-        div.studIDfname {                       /* define a div class for the student number and full name */
-            color: blue;
-            font-family: 'Tahoma';
-            font-size: xx-large;
-            font-weight: bold;
-            border:1px dashed blue;
-            background-color: aqua;
-            padding: 10px;
-        }
-        div.subjcodetitle {                     /* define a div class for the subject code and title */
-            color: blue;
-            font-family: 'Tahoma';
-            font-size: large;
-            font-weight: bold;
-        }
-        div.assnumduedate {                     /* define a div class for the assignment number and due date */
-            color: blue;
-            font-family: 'Montserrat';
-            font-size: small;
-            font-weight: bold;
-        }
-        tr {
-            font-family: 'Montserrat';
-            font-size: 16px;
-            border-width: 5px;
-            padding: 10px;
-            background-color: white;
-        }
-        th {
-            background-color: #001641;   
-            color: white;
-            padding: 10px;
-            align-items: left;
-        }
-        td {
-            align-items: left;
-            padding: 10px;
-        }
-        .census-list {
-            list-style-type: none; /* Remove default numbering */
-            padding-left: 20px; /* Add some left padding for the dots */
-        }
-        .census-list li:before {
-            content: "•"; /* Unicode character for a bullet point */
-            margin-right: 10px; /* Space between the bullet and the content */
-        }
-        a {
-            font-family: 'Montserrat';
-        }
-        .custom-table {
-            border-collapse: collapse;
-            width: 60%;
-        }
-        .custom-table th, .custom-table td {
-            border: 0.5px solid #ccc; /* Grey border for gridlines */
-            padding: 10px;
-            text-align: left;
-        }
-        .custom-table th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-		.custom-table tr:nth-child(odd) {
-            background-color: #f2f2f2;         /* Set background color for odd rows */
-        }
-        .webattack-table {
-            border-collapse: separate;
-            width: 70%;
-            border: blue;
-            border-color: #333;
-            font-family: Verdana;
-        }
-        .webattack-table th, .webattack-table td {
-            background-color: #f2f2f2;
-            border: 1px solid;
-            color: blue;
-            font-family: Tahoma;
-            vertical-align: top;
-        }
-        .highlightselection  {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            cursor: pointer;
-            outline: none;
-        }
-        .highlighted {
-            background-color: #007bff; /* Change to your desired highlight color */
-            color: #fff;  
-        }
-        web_image {
-            width: 320px;
-			height: 240px;
-        }
+        /* refer to mystyle.css */    
 	</style>
 	
 </head>
 
 <body>
+    <script src="myscript.js" type="text/javascript" charset="UTF-8"></script>
     <h1 class="h11"> Assessment Task 3 - Assignment 1 </h1>
 		
 	<h1> Task 1: Use CSS to display the following information </h1>
@@ -529,9 +367,9 @@
     <h1> Task 4: Javascript with button </h1>
 	<!-- html code for task 4 must be right below -->
 	
-    <button id=Cat class="button" onclick="Cat()">Cat</button>
-	<button id=Dog class="button" onclick="Dog()">Dog</button>
-    <button id=Frog class="button" onclick="Frog()">Frog</button>
+    <button id=Cat class="button" onclick="Animal('Cat')">Cat</button>
+	<button id=Dog class="button" onclick="Animal('Dog')">Dog</button>
+    <button id=Frog class="button" onclick="Animal('Frog')">Frog</button>
 	<br> <br>
     <input type="text" id="userclicks" name="ButtonClicked" size="30">
     <br> <br>
@@ -539,9 +377,9 @@
     <br><br>
     <span class="web_image"; id="showimage"></span>	
 	
-    <!-- <a href="https://commons.wikimedia.org/wiki/File:Dog_Breeds.jpg">Hebrew Matio</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons-->
-    <!-- <a href="https://commons.wikimedia.org/wiki/File:Adorable-animal-cat-20787.jpg">Lau20fe</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons-->
-    <!-- <a title="Charles J. Sharp, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Marsh_frog_(Pelophylax_ridibundus).jpg"><img width="256" alt="Marsh frog (Pelophylax ridibundus)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Marsh_frog_%28Pelophylax_ridibundus%29.jpg/256px-Marsh_frog_%28Pelophylax_ridibundus%29.jpg"></a>-->
+    <!--"Dog.jpg" <a href="https://commons.wikimedia.org/wiki/File:Dog_Breeds.jpg">Hebrew Matio</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons-->
+    <!-- "Cat.jpg" <a href="https://commons.wikimedia.org/wiki/File:Adorable-animal-cat-20787.jpg">Lau20fe</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons-->
+    <!-- "Frog.jpg" <a title="Charles J. Sharp, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Marsh_frog_(Pelophylax_ridibundus).jpg"><img width="256" alt="Marsh frog (Pelophylax ridibundus)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Marsh_frog_%28Pelophylax_ridibundus%29.jpg/256px-Marsh_frog_%28Pelophylax_ridibundus%29.jpg"></a>-->
 	
     
     <h1> Task 5: Gihub repository </h1>

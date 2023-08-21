@@ -25,3 +25,6 @@ function DisplayImage(picture){								    //function to display the lion image
     image.appendChild(imageElement);				            //dynamically append image to the imageElement variable
     console.log("The image has been displayed.");               //log the successful output to console for debugging purposes
     }
+    function openNewTab() {
+        window.open("COMP804 - Assignment 1 - Task 5.docx", "_blank")
+    }
