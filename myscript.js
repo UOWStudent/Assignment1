@@ -26,5 +26,5 @@ function DisplayImage(picture){								    //function to display the lion image
     console.log("The image has been displayed.");               //log the successful output to console for debugging purposes
     }
     function openNewTab() {
-        window.open("COMP804 - Assignment 1 - Task 5.docx", "_blank")
+        window.open("https://docs.google.com/document/d/1IbJONm0bl9GZxUp0Tem_HWvrffnSn_rX/edit?usp=sharing&ouid=104962663058703980277&rtpof=true&sd=true", "_blank");
     }
