@@ -2,7 +2,6 @@ import re
 import html
 import urllib.parse
 from flask import Flask, render_template
-import myscript  # Import Python script
 
 app = Flask(__name__)
 
