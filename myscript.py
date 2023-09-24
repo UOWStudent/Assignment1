@@ -1,11 +1,6 @@
 import re
 import html
 import urllib.parse
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
 
 def validate_user_input(input_string):
   """Validates user input for malicious code or characters.
